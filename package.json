@@ -1,6 +1,6 @@
 {
   "name": "@romwod/redaxios",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "The API from Axios, as a tiny abstraction over Fetch.",
   "source": "src/index.js",
   "main": "dist/redaxios.js",
@@ -12,8 +12,8 @@
     "test": "eslint src test --fix && karmatic",
     "release": "npm t && git commit -am \"$npm_package_version\" && git tag $npm_package_version && git push && git push --tags && npm publish"
   },
-  "repository" : {
-    "type" : "git",
+  "repository": {
+    "type": "git",
     "url": "ssh://git@github.com/romwod/redaxios.git",
     "directory": "."
   },
