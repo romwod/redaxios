@@ -10,7 +10,8 @@
   "scripts": {
     "build": "microbundle",
     "test": "eslint src test && karmatic",
-    "release": "npm t && git commit -am \"$npm_package_version\" && git tag $npm_package_version && git push && git push --tags && npm publish"
+    "release": "npm t && git commit -am \"$npm_package_version\" && git tag $npm_package_version && git push && git push --tags && npm publish",
+    "postinstall": "npm i && npm run build"
   },
   "files": [
     "dist",
