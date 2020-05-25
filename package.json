@@ -1,5 +1,5 @@
 {
-  "name": "redaxios",
+  "name": "@romwod/redaxios",
   "version": "0.2.0",
   "description": "The API from Axios, as a tiny abstraction over Fetch.",
   "source": "src/index.js",
@@ -9,9 +9,13 @@
   "types": "./index.d.ts",
   "scripts": {
     "build": "microbundle",
-    "test": "eslint src test && karmatic",
-    "release": "npm t && git commit -am \"$npm_package_version\" && git tag $npm_package_version && git push && git push --tags && npm publish",
-    "postinstall": "npm i && npm run build"
+    "test": "eslint src test --fix && karmatic",
+    "release": "npm t && git commit -am \"$npm_package_version\" && git tag $npm_package_version && git push && git push --tags && npm publish"
+  },
+  "repository" : {
+    "type" : "git",
+    "url": "ssh://git@github.com/romwod/redaxios.git",
+    "directory": "."
   },
   "files": [
     "dist",
@@ -20,7 +24,6 @@
   "eslintConfig": {
     "extends": "developit"
   },
-  "repository": "developit/redaxios",
   "keywords": [
     "axios",
     "fetch"

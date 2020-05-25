@@ -28,7 +28,7 @@ describe('redaxios', () => {
 		const spy = jasmine.createSpy();
 		await req.catch(spy);
 		expect(spy).toHaveBeenCalledTimes(1);
-		expect(spy).toHaveBeenCalledWith(jasmine.objectContaining({ status: 404 }));
+		expect(spy).toHaveBeenCalledWith(expect.objectContaining({ status: 404 }));
 	});
 
 	it('should request a file', async () => {
@@ -59,7 +59,7 @@ describe('redaxios', () => {
 				hello: 'world'
 			});
 			expect(window.fetch).toHaveBeenCalledTimes(1);
-			expect(window.fetch).toHaveBeenCalledWith('/foo', jasmine.objectContaining({
+			expect(window.fetch).toHaveBeenCalledWith('/foo', expect.objectContaining({
 				method: 'post',
 				headers: {
 					'content-type': 'application/json'
@@ -132,5 +132,5 @@ describe('redaxios', () => {
 		const newRes = await newReq;
 		expect(newRes).toBeInstanceOf(Object);
 		expect(newRes.data).toEqual({ hello: 'world' });
-  });
+	});
 });
