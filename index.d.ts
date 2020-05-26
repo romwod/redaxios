@@ -1,6 +1,6 @@
 import { AxiosStatic } from "axios";
 
-declare module "redaxios" {
+declare module "@romwod/redaxios" {
 	const redaxios: AxiosStatic;
 	export default redaxios;
 }

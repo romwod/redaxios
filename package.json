@@ -1,6 +1,6 @@
 {
   "name": "@romwod/redaxios",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "The API from Axios, as a tiny abstraction over Fetch.",
   "source": "src/index.js",
   "main": "dist/redaxios.js",
@@ -14,8 +14,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "ssh://git@github.com/romwod/redaxios.git",
+    "url": "git://github.com/romwod/redaxios.git",
     "directory": "."
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   },
   "files": [
     "dist",
