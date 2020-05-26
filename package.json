@@ -1,6 +1,6 @@
 {
   "name": "@romwod/redaxios",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "The API from Axios, as a tiny abstraction over Fetch.",
   "source": "src/index.js",
   "main": "dist/redaxios.js",
