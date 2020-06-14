@@ -247,7 +247,7 @@ export default (function create(defaults) {
 		});
 	}
 
-	redaxios.CancelToken = self.AbortController || Object;
+	redaxios.CancelToken = ((window && window.self) && window.self.AbortController) || Object;
 
 	redaxios.create = create;
 
